@@ -22,8 +22,9 @@ endif
 
 "set guifont=Source\ Code\ Pro:h15
 "set guifont=Anonymous:h15
-set guifont=Envy\ Code\ R:h15
+"set guifont=Envy\ Code\ R:h15
 "set guifont=Liberation\ Mono:h15
 "set guifont=Monaco:h12
-"set guifont=Menlo:h13
+"set guifont=Menlo\ for\ Powerline:h15
+set guifont=Ubuntu\ Mono\ for\ Powerline:h18
 
