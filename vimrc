@@ -5,7 +5,7 @@ set encoding=utf-8
 
 let mapleader=","
 
-" pathogen for managing plugins
+" pathogen for managing plugins (from github.com/tpope/vim-pathogen)
 call pathogen#infect()
 call pathogen#helptags()
 
@@ -16,6 +16,7 @@ syntax on
 "colorscheme desert
 " blackboard scheme from http://www.vim.org/scripts/script.php?script_id=2280
 "colorscheme blackboard
+" molokai scheme also managed using pathogen, origin github.com/nviennot/molokai
 colorscheme molokai
 " color tweaks (from desert)
 highlight clear Search
@@ -28,14 +29,14 @@ set softtabstop=4
 set expandtab
 set nowrap
 
-" configure display of invisible characters (colors work for blackboard
-" scheme, for desert not so much; symbols used are present in Droid Sans Mono
-" Slashed, may or may not work with other fonts)
+" configure display of invisible characters (colors work for blackboard and
+" molokai schemes, for desert not so much; symbols used are present in Droid Sans Mono
+" Slashed as well as Ubuntu Mono, may or may not work with other fonts)
 set list
 "set listchars=tab:›\ ,eol:¬,extends:…,precedes:…,trail:∙
 set listchars=tab:›\ ,eol:¬,extends:…,precedes:…,trail:•
-highlight NonText guifg=#4a4a59
-highlight SpecialKey guifg=#4a4a59
+highlight NonText guifg=#4a4a59 guibg=#1b1d1e
+highlight SpecialKey guifg=#4a4a59 guibg=#1b1d1e
 
 set backspace=indent,eol,start
 
